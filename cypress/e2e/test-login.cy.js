@@ -1,4 +1,9 @@
 describe("Test E2E de AuthPage", () => {
+
+  beforeEach(() => {
+    cy.clearCookiesAll()
+  })
+
   it("Login Form lleva a Home", () => {
     Cypress.env("dev", true);
     const isDev = Cypress.env().dev;

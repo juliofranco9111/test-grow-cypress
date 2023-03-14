@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('clearCookiesAll', () => {
+    cy.clearCookies()
+    cy.clearLocalStorage()
+    cy.window().then((win) => {
+      win.sessionStorage.clear()
+    })
+})
