@@ -1,0 +1,17 @@
+{
+  "name": "test-cypress-grow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:dev": "cypress run --env dev=true",
+    "cypress": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.7.0"
+  }
+}
